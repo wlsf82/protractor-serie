@@ -1,6 +1,6 @@
-browser.ignoreSynchronization = true;
-
 var helper = require('./helper');
+
+browser.ignoreSynchronization = true;
 
 describe ('Taller', function () {
   it ('should have the blog logo', function () {
