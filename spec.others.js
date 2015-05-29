@@ -3,6 +3,7 @@ var helper = require('./helper');
 browser.ignoreSynchronization = true;
 
 describe ('Other sites', function () {
+
   it ('should have the blog logo', function () {
     browser.get('/');
     helper.verifyElementPresenceById('wrapper .logo img');
@@ -29,4 +30,5 @@ describe ('Other sites', function () {
     expect(resultContainer.getText()).toContain('INTERAGINDO COM ELEMENTOS DENTRO DE UM IFRAME COM PROTRACTOR');
     expect(resultContainer.getText()).toContain('UM POUCO MAIS DE PROTRACTOR');
   });
+
 });
