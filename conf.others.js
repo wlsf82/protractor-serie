@@ -7,7 +7,7 @@ exports.config = {
   baseUrl: 'http://qualidadedesoftware.com.br',
 
   capabilities: {
-    'browserName': 'firefox'
+    'browserName': 'chrome'
   }
 
   // multiCapabilities: [{
