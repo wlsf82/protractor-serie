@@ -1,4 +1,4 @@
-var helper = require('./helper');
+var helper = require('./helpers/helper');
 
 browser.ignoreSynchronization = true;
 
