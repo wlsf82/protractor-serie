@@ -22,6 +22,18 @@ exports.config = {
     // Test suite name.
     'name': 'Protractor Serie'
 
-  }
-  
+  },
+
+  onPrepare: function() {
+    var SpecReporter = require('jasmine-spec-reporter');
+
+    // add jasmine spec reporter
+    jasmine.getEnv().addReporter(new SpecReporter({
+      displayFailuresSummary: true, // display summary of all failures after execution
+      displayFailedSpec: true,      // display each failed spec
+      displaySuiteNumber: true,     // display each suite number (hierarchical)
+      displaySpecDuration: true     // display each spec duration
+    }));
+  },
+
 }
